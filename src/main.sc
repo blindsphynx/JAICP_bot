@@ -19,6 +19,12 @@ theme: /
             a: Пока!
             a: Всего доброго!
 
+    state: Question
+        intent!: /как дела?
+        random:
+            a: Отлично!
+            a: Чудесно!            
+
     state: NoMatch
         event!: noMatch
         random:
