@@ -22,8 +22,9 @@ theme: /
     state: Question
         intent!: /как дела?
         random:
-            a: Отлично!
-            a: Чудесно!            
+            a: Отлично, ведь я общаюсь с тобой :)
+            a: Чудесно!   
+            a: Всё хорошо! 
 
     state: NoMatch
         event!: noMatch
