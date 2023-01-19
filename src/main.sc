@@ -8,15 +8,22 @@ theme: /
 
     state: Hello
         intent!: /привет
-        a: Привет привет
+        random:
+            a: Привет!
+            a: Здравствуй!
+            a: Приветствую!
 
     state: Bye
         intent!: /пока
-        a: Пока пока
+        random:
+            a: Пока!
+            a: Всего доброго!
 
     state: NoMatch
         event!: noMatch
-        a: Я не понял. Вы сказали: {{$request.query}}
+        random:
+            a: Я не понял. Вы сказали: {{$request.query}}. Пожалуйста, переформулируйте!
+            a: Извините, я вас не понимаю.
 
     state: Match
         event!: match
