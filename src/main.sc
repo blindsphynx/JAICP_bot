@@ -19,9 +19,9 @@ theme: /
             a: Bye!
             a: See you!
 
-    # state: /SelectOption
-    #         inlineButtons:
-    #             {text: "chillout music", url: "https://www.youtube.com/watch?v=KuDWifo1q1U&ab_channel=RelaxChilloutMusic"}
+    state: /SelectOption
+            inlineButtons:
+                {text: "chillout music", url: "https://www.youtube.com/watch?v=KuDWifo1q1U&ab_channel=RelaxChilloutMusic"}
         
     state: Question
         q!: [how are you | what's up] 
