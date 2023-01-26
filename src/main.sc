@@ -6,7 +6,7 @@ theme: /
         q!: $regex</start>
         a: Start.
         
-    state: SelectOption
+    state: /SelectOption
         buttons:
             "tell a story"
             "high five!"
