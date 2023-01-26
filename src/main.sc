@@ -18,11 +18,7 @@ theme: /
         random:
             a: Bye!
             a: See you!
-
-    state: /SelectOption
-        inlineButtons:
-            {text: "chillout music", url: "https://www.youtube.com/watch?v=KuDWifo1q1U&ab_channel=RelaxChilloutMusic"}
-        
+    
     state: Question
         q!: [how are you | what's up] 
         random:
@@ -32,10 +28,14 @@ theme: /
             a: Fricking cool, bro!
         go!: /SelectOption
 
-    # state: /SelectOption
-    #     buttons:
-    #         "tell a story"
-    #         "high five!"
+    state: /SelectOption
+        buttons:
+            "chillout music"
+            "high five!"
+    
+    state: /SelectOption
+        inlineButtons:
+            {text: "chillout music", url: "https://www.youtube.com/watch?v=KuDWifo1q1U&ab_channel=RelaxChilloutMusic"}
     
     state: NoMatch
         event!: noMatch
