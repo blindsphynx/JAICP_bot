@@ -33,7 +33,7 @@ theme: /
     #         "tell a story"
     #         "high five!"
     
-    state: /Story
+    state: /SelectOption
         inlineButtons:
             {text: "chillout music", url: "https://www.youtube.com/watch?v=KuDWifo1q1U&ab_channel=RelaxChilloutMusic"}
         
