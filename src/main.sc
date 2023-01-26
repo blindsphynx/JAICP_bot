@@ -7,30 +7,30 @@ theme: /
         a: Начнём.
 
     state: Hello
-        intent!: /привет
+        intent!: /hello
         random:
-            a: Привет!
-            a: Здравствуй!
-            a: Приветствую!
+            a: Hello!
+            a: Hi!
+            a: Glad to see you!
 
     state: Bye
-        intent!: /пока
+        intent!: /bye
         random:
-            a: Пока!
-            a: Всего доброго!
+            a: Bye!
+            a: Goodbye!
 
     state: Question
-        q!: как дела
+        q!: * [how are you | what's up] *
         random:
-            a: Отлично! 
-            a: Чудесно, ведь я общаюсь с тобой :)   
-            a: Всё хорошо! 
+            a: I'm fine, thanks! 
+            a: Great, because I'm talking to you :)   
+            a: All right! 
 
     state: NoMatch
         event!: noMatch
         random:
-            a: Я не понял. Вы сказали: {{$request.query}}. Пожалуйста, переформулируйте!
-            a: Извините, я вас не понимаю.
+            a: I don't understand. You said: {{$request.query}}
+            a: Sorry, I don't understand you.
 
     state: Match
         event!: match
