@@ -27,11 +27,6 @@ theme: /
             a: All right! 😜
             a: Fricking cool, bro!
         go!: /SelectOption
-
-    state: /SelectOption
-        buttons:
-            "chillout music"
-            "high five!"
     
     state: /SelectOption
         inlineButtons:
