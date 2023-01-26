@@ -16,26 +16,38 @@
     "shared" : false
   },
   "intents" : [ {
-    "path" : "/пока",
+    "path" : "/bye",
+    "answer" : "see you, bro!",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
-      "text" : "пока"
+      "text" : "bye"
+    }, {
+      "text" : "goodbye"
+    }, {
+      "text" : "see you"
     } ],
     "classificationRules" : {
       "refs" : [ ]
     },
+    "patterns" : [ ],
     "priority" : 0
   }, {
-    "path" : "/привет",
+    "path" : "/hello",
+    "answer" : "hi",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
-      "text" : "привет"
+      "text" : "hi"
+    }, {
+      "text" : "hello"
+    }, {
+      "text" : "hey"
     } ],
     "classificationRules" : {
       "refs" : [ ]
     },
+    "patterns" : [ ],
     "priority" : 0
   } ],
   "entities" : [ ],
