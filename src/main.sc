@@ -11,13 +11,13 @@ theme: /
         random:
             a: Hello!
             a: Hi!
-            a: Glad to see you!
+            a: Glad to see you, bro!
 
     state: Bye
         intent!: /bye
         random:
             a: Bye!
-            a: Goodbye!
+            a: See you!
 
     state: Question
         q!: * [how are you | what's up] *
@@ -25,12 +25,13 @@ theme: /
             a: I'm fine, thanks! 
             a: Great, because I'm talking to you :)   
             a: All right! 
+            a: Fricking cool, bro!
 
     state: NoMatch
         event!: noMatch
         random:
-            a: I don't understand. You said: {{$request.query}}
-            a: Sorry, I don't understand you.
+            a: Hey, bro, I don't understand. You said: {{$request.query}}
+            a: Sorry bro, I don't understand you.
 
     state: Match
         event!: match
