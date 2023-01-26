@@ -5,11 +5,6 @@ theme: /
     state: Start
         q!: $regex</start>
         a: Start.
-        
-    state: /SelectOption
-        buttons:
-            "tell a story"
-            "high five!"
 
     state: Hello
         intent!: /hello
@@ -31,8 +26,17 @@ theme: /
             a: Great, because I'm talking to you :)   
             a: All right! 
             a: Fricking cool, bro!
-        go: /SelectOption
+        go!: /SelectOption
 
+    # state: /SelectOption
+    #     buttons:
+    #         "tell a story"
+    #         "high five!"
+    
+    state: /Story
+        inlineButtons:
+            {text: "chillout music", url: "https://www.youtube.com/watch?v=KuDWifo1q1U&ab_channel=RelaxChilloutMusic"}
+        
     state: NoMatch
         event!: noMatch
         random:
