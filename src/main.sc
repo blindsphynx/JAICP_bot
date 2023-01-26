@@ -7,14 +7,14 @@ theme: /
         a: Start.
 
     state: Hello
-        intent!: hello
+        intent!: /hello
         random:
             a: Hello!
             a: Hi!
             a: Glad to see you, bro!
 
     state: Bye
-        intent!: bye
+        intent!: /bye
         random:
             a: Bye!
             a: See you!
