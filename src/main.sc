@@ -31,7 +31,7 @@ theme: /
             a: Great, because I'm talking to you :)   
             a: All right! 
             a: Fricking cool, bro!
-            go: SelectOption
+        go: /SelectOption
 
     state: NoMatch
         event!: noMatch
