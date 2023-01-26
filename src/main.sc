@@ -4,7 +4,12 @@ theme: /
 
     state: Start
         q!: $regex</start>
-        a: Начнём.
+        a: Start.
+        
+    state: SelectOption
+        buttons:
+            "tell a story"
+            "high five!"
 
     state: Hello
         intent!: /hello
@@ -26,6 +31,7 @@ theme: /
             a: Great, because I'm talking to you :)   
             a: All right! 
             a: Fricking cool, bro!
+            go: SelectOption
 
     state: NoMatch
         event!: noMatch
