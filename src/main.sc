@@ -31,8 +31,7 @@ theme: /
         
     state: MainButtons
         buttons:
-            "Это кнопка 1"
-            "Это кнопка 2"
+            "Button" -> {{$temp.match.targetState}}
     
     state: /SelectOption
         inlineButtons:
