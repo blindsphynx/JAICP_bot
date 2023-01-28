@@ -28,6 +28,11 @@ theme: /
             a: Fricking cool, bro!
         a: Wanna chill?     
         go!: /SelectOption
+        
+    state: MainButtons
+        buttons:
+            "Это кнопка 1"
+            "Это кнопка 2"
     
     state: /SelectOption
         inlineButtons:
