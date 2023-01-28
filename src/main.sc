@@ -8,7 +8,8 @@ theme: /
         
     state: Help
         q!: $regex</help>
-        a: ./MainButtons  
+        buttons:
+            ./MainButtons  
 
     state: Hello
         intent!: /hello
