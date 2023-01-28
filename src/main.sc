@@ -8,9 +8,8 @@ theme: /
         
     state: Help
         q!: $regex</help>
-        a:
-            buttons:
-                "what can I do?" -> /MainButtons  
+        buttons:
+            "what can I do?" -> /MainButtons  
 
     state: Hello
         intent!: /hello
@@ -40,6 +39,7 @@ theme: /
             "what can I do?" -> /MainButtons
         
     state: MainButtons
+        q!: [(buttons | *help* *)]
         buttons:
             "say hello" -> /Hello
             "ask what's up" -> /HowAreYou
