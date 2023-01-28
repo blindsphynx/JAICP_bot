@@ -19,13 +19,13 @@ theme: /
             a: Bye!
             a: See you!
     
-    state: Question
-        q!: * [(how are you | what's up)] *
-        random:
-            a: I'm fine, thanks! 
-            a: Great, because I'm talking to you :)   
-            a: All right! 😜
-            a: Fricking cool, bro!
+    # state: Question
+    #     q!: * [(how are you | what's up)] *
+    #     random:
+    #         a: I'm fine, thanks! 
+    #         a: Great, because I'm talking to you :)   
+    #         a: All right! 😜
+    #         a: Fricking cool, bro!
         #go!: /SelectOption
     
     # state: /SelectOption
