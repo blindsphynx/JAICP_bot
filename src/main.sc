@@ -5,6 +5,10 @@ theme: /
     state: Start
         q!: $regex</start>
         a: Start.
+        
+    state: Help
+        q!: $regex</help>
+        a: ./MainButtons  
 
     state: Hello
         intent!: /hello
@@ -31,7 +35,10 @@ theme: /
         
     state: MainButtons
         buttons:
-            "Button" -> {{$temp.match.targetState}}
+            "say hello" -> /Hello
+            "ask what's up" -> /HowAreYou
+            "say bye" -> /Bye
+            
     
     state: /SelectOption
         inlineButtons:
