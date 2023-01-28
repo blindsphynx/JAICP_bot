@@ -9,7 +9,7 @@ theme: /
     state: Help
         q!: $regex</help>
         buttons:
-            "what can I do?" -> ./MainButtons  
+            "what can I do?" -> /MainButtons  
 
     state: Hello
         intent!: /hello
