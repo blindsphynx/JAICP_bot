@@ -4,7 +4,7 @@ theme: /
 
     state: Start
         q!: $regex</start>
-        # a: Start.
+        a: Start.
         buttons:
             "what can I do?" -> /MainButtons
         
