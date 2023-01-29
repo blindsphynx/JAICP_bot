@@ -9,7 +9,7 @@ theme: /
         state: ClickButtons
                 # q: *
                 a: Hey, please choose an option.
-                go!: /MainButtons
+                go!: ./MainButtons
 
     state: Hello
         intent!: /hello
@@ -36,8 +36,6 @@ theme: /
             a: Fricking cool, bro!
         a: Wanna chill?     
         go!: /SelectOption
-        buttons:
-            "what can I do?" -> ../MainButtons
         
     state: MainButtons
         buttons:
