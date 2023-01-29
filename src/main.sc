@@ -5,7 +5,7 @@ theme: /
     state: Start
         q!: $regex</start>
         buttons:
-            "what can I do?" 
+            "what can I do?" -> /MainButtons
         state: ClickButtons
                 q: *
                 a: Hey, please choose an option.
