@@ -46,7 +46,6 @@ theme: /
             "what's up bro?" -> /HowAreYou
             "say bye" -> /Bye
             
-    
     state: /SelectOption
         inlineButtons:
             {text: "chillout music", url: "https://www.youtube.com/watch?v=KuDWifo1q1U&ab_channel=RelaxChilloutMusic"}
