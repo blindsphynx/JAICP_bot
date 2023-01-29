@@ -7,7 +7,7 @@ theme: /
         buttons:
             "what can I do?" -> /MainButtons
         state: ClickButtons
-                q: *
+                # q: *
                 a: Hey, please choose an option.
                 go!: /MainButtons
 
