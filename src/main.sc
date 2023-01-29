@@ -18,8 +18,8 @@ theme: /
             a: Hi!
             a: Glad to see you, bro!
         buttons:
-            "ask what's up" -> /HowAreYou
-            "say bye" -> /Bye   
+            "what's up bro?" -> /HowAreYou
+            "bye" -> /Bye   
 
     state: Bye
         intent!: /bye
@@ -37,7 +37,7 @@ theme: /
         a: Wanna chill?     
         go!: /SelectOption
         buttons:
-            "what can I do?" -> ./MainButtons
+            "what can I do?" -> ../MainButtons
         
     state: MainButtons
         buttons:
