@@ -7,9 +7,9 @@ theme: /
         buttons:
             "what can I do?" -> /MainButtons
         state: ClickButtons
-                # q: *
-                a: Hey, please choose an option.
-                go!: ./MainButtons
+            # q: *
+            a: Hey, please choose an option.
+            go!: /MainButtons
 
     state: Hello
         intent!: /hello
@@ -39,9 +39,9 @@ theme: /
         
     state: MainButtons
         buttons:
-            "say hello" -> /Hello
+            "hello" -> /Hello
             "what's up bro?" -> /HowAreYou
-            "say bye" -> /Bye
+            "bye" -> /Bye
             
     state: /SelectOption
         inlineButtons:
