@@ -7,11 +7,10 @@ theme: /
         a: Start.
         buttons:
             "what can I do?" -> /MainButtons
-        
-    state: Help
-        q!: $regex</help>
-        buttons:
-            "what can I do?" -> /MainButtons  
+        state: ClickButtons
+                q: *
+                a: Hey, please choose an option.
+                go!: /MainButtons
 
     state: Hello
         intent!: /hello
