@@ -4,7 +4,9 @@ theme: /
 
     state: Start
         q!: $regex</start>
-        a: Start.
+        # a: Start.
+        buttons:
+            "what can I do?" -> /MainButtons
         
     state: Help
         q!: $regex</help>
@@ -42,7 +44,7 @@ theme: /
     state: MainButtons
         buttons:
             "say hello" -> /Hello
-            "ask what's up" -> /HowAreYou
+            "what's up bro?" -> /HowAreYou
             "say bye" -> /Bye
             
     
