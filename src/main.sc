@@ -26,7 +26,7 @@ theme: /
             a: See you!
     
     state: HowAreYou
-        q!: [(* how *r* *u * | * what's up) *] 
+        q!: [(* how *r* *u * | * what's up | how do *u do *) *] 
         random:
             a: I'm fine, thanks! 
             a: Great, because I'm talking to you :)   
