@@ -1,21 +1,22 @@
 require: slotfilling/slotFilling.sc
   module = sys.zb-common
-# require: name/name.sc
-#   module = sys.zb-common  
-# require: name/nameEn.sc
-#   module = sys.zb-common  
+require: name/name.sc
+  module = sys.zb-common  
+require: name/nameEn.sc
+  module = sys.zb-common  
 theme: /
     
-    state: Start || modal = true
+    state: Start 
         q!: $regex</start>
         a: Hey, what's your name?
 
-        state: GetName
-            q!: @pymorhy.name 
-            a: Nice to meet you, {{$parseTree["_pymorhy.name"]}}!
-            # buttons:
-                # "what can I do?" -> /MainButtons
-        go!: /MainButtons
+        state: GetName || modal = true
+            q: * @mystem.persn *
+            a: Nice to meet you, {{capitalize($parseTree["_mystem.persn"])}}!
+            go!: /MainButtons
+        state: LocalNoMatch
+            event!: noMatch
+            a: I don't know such a name... Please try once again
 
     state: Hello
         intent!: /hello
